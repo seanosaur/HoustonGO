@@ -4,13 +4,11 @@ var map = L.map('map', {
 });
 
 map.locate({setView: true, maxZoom: 16});
-// var center = map.getCenter();
-// var zoom = map.getZoom();
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+L.tileLayer('//api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
   maxZoom: 18,
-  attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-    '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-    'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+  attribution: 'Map data &copy; <a href="//openstreetmap.org">OpenStreetMap</a> contributors, ' +
+    '<a href="//creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+    'Imagery © <a href="//mapbox.com">Mapbox</a>',
   id: 'mapbox.streets',
   accessToken: 'pk.eyJ1Ijoic2Vhbm9zYXVyIiwiYSI6ImNpcWR4OWhtMTAyeDZmdG5wMHZyczFtbHkifQ.zyY0NwO9UdLZnguJNaykmQ'
 }).addTo(map);
